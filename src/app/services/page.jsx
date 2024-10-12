@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CareerPage() {
+function ServicesPage() {
   return (
-    <div>CareerPage</div>
+    <div>ServicesPage</div>
   )
 }
 
-export default CareerPage
+export default ServicesPage
