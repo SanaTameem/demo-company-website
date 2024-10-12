@@ -1,0 +1,10 @@
+.navbar {
+  height: 75px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    z-index: 2;
+    background-color: var(--bs-dark);
+  }
+}
