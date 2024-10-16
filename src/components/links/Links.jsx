@@ -1,4 +1,3 @@
-import styles from "./links.module.css";
 import Link from "next/link";
 import {links} from './links';
 
@@ -21,7 +20,6 @@ function Links() {
             <ul className="dropdown-menu">
               {link.sub_categories.map((sub) => {
                 return (
-                  // Added return statement here
                   <Link key={sub} className="dropdown-item" href={link.path}>
                     {sub}
                   </Link>

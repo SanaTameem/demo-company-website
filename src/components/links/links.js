@@ -4,7 +4,7 @@ export let links = [
     path: "/",
     sub_categories: [
       "Company Background",
-      " Why us?",
+      "Why us?",
       "Our Team",
       "Our Partners",
       "Our Goals and Missions",

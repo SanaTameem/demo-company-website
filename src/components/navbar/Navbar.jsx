@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./navbar.css";
-import Links from "../links/Links";
+import Links from "../links/Links.jsx";
 
 function Navbar() {
   return (
