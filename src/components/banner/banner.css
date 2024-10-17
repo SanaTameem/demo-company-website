@@ -1,0 +1,17 @@
+::marker{
+  content: '';
+}
+
+.banner-img{
+  height: 80vh;
+}
+
+.carousel{
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 768px){
+  .banner-img{
+    height: 50vh;
+  }
+}

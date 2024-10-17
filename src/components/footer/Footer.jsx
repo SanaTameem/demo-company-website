@@ -4,7 +4,7 @@ import { links } from "../links/links";
 function Footer() {
   return (
     <footer className="py-3 my-4">
-      <div className="container fixed-bottom">
+      <div className="container">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           {links.map((link) => (
             <li className="nav-item" key={link.title}>

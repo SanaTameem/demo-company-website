@@ -1,15 +1,15 @@
-import styles from "./links.module.css";
 import Link from "next/link";
 import {links} from './links';
+import './links.css';
 
 function Links() {
   return (
     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
       {links.map((link) =>
         link.sub_categories.length > 0 ? (
-          <li className="nav-item dropdown" key={link.title}>
+          <li className="nav-item dropdown fw-fw-semibold" key={link.title}>
             <Link
-              className="nav-link dropdown-toggle"
+              className="nav-link text-primary dropdown-toggle"
               href={link.path}
               role="button"
               data-bs-toggle="dropdown"
@@ -21,9 +21,8 @@ function Links() {
             <ul className="dropdown-menu">
               {link.sub_categories.map((sub) => {
                 return (
-                  // Added return statement here
-                  <Link key={sub} className="dropdown-item" href={link.path}>
-                    {sub}
+                  <Link key={sub.sub_name} className="dropdown-item" href={sub.sub_path}>
+                    {sub.sub_name}
                   </Link>
                 );
               })}
@@ -31,7 +30,7 @@ function Links() {
           </li>
         ) : (
           <li className="nav-item" key={link.title}>
-            <Link className="nav-link" href={link.path}>
+            <Link className="nav-link text-primary" href={link.path}>
               {link.title}
             </Link>
           </li>

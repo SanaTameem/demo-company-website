@@ -1,0 +1,22 @@
+.team-bg {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./../../../public/img\ \(5\).jpg") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.team-bg-text{
+  height: 400px;
+}
+
+.goal-icon {
+  width: 110px;
+}
+
+.card {
+  height: 90%;
+}
